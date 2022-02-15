@@ -22,15 +22,18 @@
         <div class="weather-app">
           <div class="overview">
             <h1 id="city"></h1>
-            <span>Sunday 15:51</span>
+            <span id="date"></span>
           </div>
           <div class="weather-temperature">
-            <strong id="temperature">20</strong
+            <strong id="temperature"></strong
             ><span class="units">°C | <a href="#">°F</a></span>
           </div>
           <div>
-            <span>Min °</span> •
-            <span>Max °</span>
+            <ul class="temp">
+              <li>Min <span id="tempMin"></span>°</li>
+              •
+              <li>Max <span id="tempMax"></span>°</li>
+            </ul>
           </div>
           <div class="weather-icon">
             <img
