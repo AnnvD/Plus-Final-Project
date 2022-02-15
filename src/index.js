@@ -45,6 +45,8 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
+  let tempMinElement = document.querySelector("#tempMin");
+  let tempMaxElement = document.querySelector("#tempMax");
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -52,6 +54,8 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  tempMinElement.innerHTML = Math.round(response.data.main.temp_min);
+  tempMaxElement.innerHTML = Math.round(response.data.main.temp_max);
 }
 
 let apiKey = "26e159f7947d033626fa3f721455b5b7";
