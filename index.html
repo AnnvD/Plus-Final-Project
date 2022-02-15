@@ -10,6 +10,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    ;
+
     <link rel="stylesheet" href="src/style.css" />
     <title>Plus Final Project</title>
   </head>
@@ -18,11 +21,11 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Nieuwendijk</h1>
+            <h1 id="city"></h1>
             <span>Sunday 15:51</span>
           </div>
           <div class="weather-temperature">
-            <strong>20</strong
+            <strong id="temperature">20</strong
             ><span class="units">°C | <a href="#">°F</a></span>
           </div>
           <div>
@@ -37,9 +40,9 @@
           </div>
           <div>
             <ul>
-              <li>Cloudy</li>
-              <li>Humidity</li>
-              <li>Wind speed</li>
+              <li id="description"></li>
+              <li>Humidity <span id="humidity"></span>%</li>
+              <li>Wind speed <span id="wind"></span> km/h</li>
             </ul>
           </div>
         </div>
