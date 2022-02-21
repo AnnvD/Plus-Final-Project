@@ -58,6 +58,7 @@ li:first-letter {
   margin: 10px;
   height: 64px;
   width: 64;
+  margin: -10px 0 25px;
 }
 
 .weather-temperature strong {
