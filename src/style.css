@@ -1,14 +1,22 @@
+body {
+  text-align: center;
+  font-family: "Pompiere", cursive;
+  font-size: 16px;
+}
+
 h1 {
-  color: #346357;
+  color: #d04202;
+  font-family: "Fredoka One", cursive;
   font-size: 33px;
   font-weight: 100;
-  line-height: 28px;
+  line-height: 30px;
   margin-bottom: 0;
 }
 
 span {
-  color: #346357;
-  font-size: 16px;
+  color: #f38b64;
+  font-family: "Pompiere", cursive;
+  font-size: 18px;
   font-weight: 100;
   line-height: 20px;
 }
@@ -24,8 +32,9 @@ ul {
 
 li {
   list-style: none;
-  color: #346357;
-  font-size: 16px;
+  color: #f38b64;
+  font-family: "Pompiere", cursive;
+  font-size: 18px;
   font-weight: 100;
   line-height: 20px;
 }
@@ -34,20 +43,37 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+small {
+  opacity: 0.4;
+}
+
 .temp li {
   display: inline-block;
 }
 
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #346357;
+  background: #d0f6ff;
+  border: 2px solid #d04202;
   border-radius: 5px;
   text-align: center;
+  color: #fff;
+}
+
+.btn {
+  color: #d0f6ff;
+  background-color: #d04202;
+  border-color: #d04202;
+}
+
+.weather-app #description {
+  color: #d04202;
+  margin: -10px 0 15px 0;
 }
 
 .overview {
@@ -62,7 +88,8 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  color: #346357;
+  color: #d04202;
+  font-family: "Fredoka One", cursive;
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
@@ -74,30 +101,27 @@ li:first-letter {
   top: -34px;
 }
 
-.weather-temperature .active {
-  color: #346357;
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
 .weather-forecast {
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
   margin-top: 20px;
+  padding: 10px;
   text-align: center;
-  color: black;
 }
 
 .weather-forecast-date {
+  color: #d04202;
+  font-family: "Fredoka One", cursive;
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.9;
+}
+
+.weather-forecast-temperature-max {
+  color: #d04202;
 }
 
 .weather-forecast-temperature-min {
+  color: #f38b64;
   opacity: 0.5;
-}
-
-.weather-forecast-temperature {
-  font-size: 13px;
 }
