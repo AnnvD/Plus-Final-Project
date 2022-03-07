@@ -63,6 +63,7 @@ small {
 
 .search-bar {
   display: inline-block;
+  width: 0 auto;
 }
 
 .btn {
@@ -90,7 +91,7 @@ small {
   display: inline-block;
   padding: 10px 75px;
   text-transform: capitalize;
-  width: 60%;
+  width: 75%;
 }
 
 .weather-temperature strong {
